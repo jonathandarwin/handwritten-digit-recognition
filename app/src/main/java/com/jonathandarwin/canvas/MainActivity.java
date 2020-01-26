@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity
             Bitmap bitmap = binding.canvas.getBitmap();
             if(isBitmapNotNull(bitmap)) {
                 if (classifier.isInitialized()) {
-                    binding.imageResult.setImageBitmap(bitmap);
+//                    binding.imageResult.setImageBitmap(bitmap);
                     classifier.classifyAsync(bitmap).addOnSuccessListener(new OnSuccessListener<String>() {
                         @Override
                         public void onSuccess(String s) {
